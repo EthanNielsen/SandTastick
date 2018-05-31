@@ -13,7 +13,23 @@ public class SandDisplay extends JComponent implements MouseListener,
   private JFrame frame;
   private int tool;
   private int numRows;
-  private int numCols;
+  public int getNumRows() {
+	return numRows;
+}
+
+public void setNumRows(int numRows) {
+	this.numRows = numRows;
+}
+
+public int getNumCols() {
+	return numCols;
+}
+
+public void setNumCols(int numCols) {
+	this.numCols = numCols;
+}
+
+private int numCols;
   private int[] mouseLoc;
   private JButton[] buttons;
   private JSlider slider;
